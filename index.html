@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="normalize.css" />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav__list-menu">
+          <li><img src="./images/logo.svg" alt="Logo" /></li>
+          <li id="feature">
+            Features
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-width="2" fill="none" d="m1 1 4 4 4-4" />
+            </svg>
+            <div class="card__disabled dropdown-menu">
+              <ul>
+                <li><img src="./images/icon-todo.svg" alt="" />Todo list</li>
+                <li><img src="./images/icon-calendar.svg" alt="" />Calendar</li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="" />Reminders
+                </li>
+                <li><img src="./images/icon-planning.svg" alt="" />Planning</li>
+              </ul>
+            </div>
+          </li>
+
+          <li id="company">
+            Company<svg
+              width="10"
+              height="6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path stroke-width="2" fill="none" d="m1 1 4 4 4-4" />
+            </svg>
+            <div class="card__disabled dropdown-menu">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <ul class="nav__login-menu">
+          <li>Login</li>
+          <li>Register</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main__first-section">
+        <h1>
+          Make <br />
+          remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <ul>
+          <li>
+            <img src="./images/client-databiz.svg" alt="" />
+          </li>
+          <li>
+            <img src="./images/client-audiophile.svg" alt="" />
+          </li>
+          <li>
+            <img src="./images/client-meet.svg" alt="" />
+          </li>
+          <li>
+            <img src="./images/client-meet.svg" alt="" />
+          </li>
+        </ul>
+      </section>
+      <section class="main__second-section">
+        <img src="./images/image-hero-desktop.png" alt="" />
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://alejandro-sanchez.vercel.app" target="_blank"
+        >Alejandro Sánchez</a
+      >.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
